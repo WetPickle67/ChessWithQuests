@@ -1,15 +1,6 @@
 class Figurka:
-    def __init__(self, barva, typ):
-        self.__barva = barva
-        self._typ = typ
-        self._vektory = None
-
-
-    def getsmery(self):
-        return self._vektory
-
-    def getbarva(self):
-        return self.__barva
-
-    def gettyp(self):
-        return self._typ
+    def __init__(self, nazev: str, barva: int):
+        self.nazev = nazev
+        self.barva = barva  # 1 = bílá, 0 = černá
+        self.vektor = []
+        self.vektory_utoku = []
