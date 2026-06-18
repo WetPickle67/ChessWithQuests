@@ -1,3 +1,4 @@
+from figurka import Figurka
 class Kral(Figurka):
     def __init__(self, barva: int):
         super().__init__("Král", barva)
